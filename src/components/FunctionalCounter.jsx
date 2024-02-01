@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { useState } from "react";
 import "./Counter.css";
 
@@ -22,15 +22,17 @@ function FunctionalCounter() {
     <div className="counter-container">
       {/*class for css styling */}
       <h2 className="counter-display">Functional component counter: {count}</h2>
-      <button className="counter-button" onClick={incrementCount}>
-        Increment
-      </button>
-      <button className="counter-button" onClick={decrementCount}>
-        Decrement
-      </button>
-      <button className="counter-button" onClick={resetCount}>
-        Reset
-      </button>
+      <div className="button-view">
+        <button className="counter-button" onClick={incrementCount}>
+          Increment
+        </button>
+        <button className="counter-button" onClick={decrementCount}>
+          Decrement
+        </button>
+        <button className="counter-button" onClick={resetCount}>
+          Reset
+        </button>
+      </div>
     </div>
   );
 }

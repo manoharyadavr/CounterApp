@@ -1,16 +1,12 @@
 .counter-container {
-  background-color: rgb(220, 218, 218);
+  background-color: rgba(233, 255, 235, 0.66);
   border-radius: 10px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 40px;
+  margin: 20px;
   width: 50%;
-  display: flex;
+  display: inline-block;
   margin-left: 22%;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .counter-display {
@@ -30,7 +26,13 @@
   border-radius: 10px;
 }
 
-.counter-button:hover{
-    background-color: #0056b3;
+.counter-button:hover {
+  background-color: #0056b3;
 }
 
+.button-view {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
